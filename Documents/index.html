@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRYX Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="IMG-20241015-WA0004.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <btn class="signup"><b><a href="main.html">Login</a></b></btn>
+                    <i class="bx bx-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bx bx-menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>
+                    <span><b>KRYX</b></span> - Your Secure Crypto Exchange
+                </h1><br>
+                <h5><b><span>KRYX</span> is a secure crypto exchange offering spot and perpetual trading!</b></h5>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="IMG-20241015-WA0004.jpg">
+                <div class="col2">
+                    <h1 class="sub-title">About Us</h1><br>
+                    <p><b>Welcome to KRYX, a trusted Platform designed for seamless, secure and User-friendly Cryptocurrency trading</b></p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><b>Security</b></p>
+                        <p class="tab-links" onclick="opentab('experience')"><b>Transparency</b></p>
+                        <p class="tab-links" onclick="opentab('education')"><b>Accessibility</b></p>
+
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>24/7 SECURITY</span><br>Top-notch Security everyday and everytime!</li>
+                            <li><span>END-TO-END ENCRYPTION</span><br>Messages are encrypted for maximum Security!</li>
+                            <li><span>CUSTOMER SERVICE</span><br>Problems are solved within your reach!</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UTMOST GOOD FAITH</span><br>We offer corruption-free services!</li>
+                            <li><span>ALL-ROUND SERVICES</span><br>Seamless services are specially rendered!</li>
+                            <li><span>OBJECTIVE</span><br>We provide a transparent trading environment!</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SCALABILITY</span><br>100% Scalable and easy to utilize!</li>
+                            <li><span>ORIENTATION</span><br>Well-organized and arranged!</li>
+                            <li><span>RATING</span><br>Trust us, we are highly rated!</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="bx bxs-chart"></i>
+                    <h2>TRADE</h2>
+                    <p>We make it easier to trade Cryptocurrencies.</p>
+                </div>
+                <div>
+                    <i class="bx bx-transfer"></i>
+                    <h2>EXCHANGE</h2>
+                    <p>We make exchange of any Crypto Coin easy.</p>
+                </div>
+                <div>
+                    <i class="bx bx-show"></i>
+                    <h2>INSIGHTS</h2>
+                    <p>We give insights on various Crypto coins.</p>
+                </div>
+            </div>
+        </div>
+
+        
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Us</h1>
+                <p><i class="bx bx-envelope"> chiamakajuliet893@gmail.com</i></p>
+                <p><i class="bx bxs-phone"> 09134364017</i></p>
+                <div class="social-icons">
+                <a href=""><i class="bx bxl-facebook"></i></a>
+                <a href="https://x.com/Kryx_99?t=eJ2npBra9T3XDnxEjmtSXA&s=09"><i class="bx bxl-twitter"></i></a>
+                <a href=""><i class="bx bxl-instagram-alt"></i></a>
+                <a href=""><i class="bx bxl-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="https://wa.me/2349049867260">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>   
+</div>
+    <div class="copyright">
+        <p>kryx-copyright <i class="bx bxs-heart"></i> @gmail.com</p>
+    </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sideMenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

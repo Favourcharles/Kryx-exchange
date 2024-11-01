@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Crypto</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+
+        }
+
+        body{
+            background: #080808;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: url(pexels-worldspectrum-844124\ \(2\).jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 0 7%;
+            color: #fff;
+        }
+
+        nav{
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo{
+            width: 50px;
+            cursor: pointer;
+        }
+
+        nav ul{
+            flex: 1;
+        }
+
+        nav ul li{
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        nav ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav .btn{
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            border-radius: 20px;
+        }
+
+        .content{
+            margin-top: 12%;
+        }
+
+        .content h1{
+            font-size: 88px;
+            margin-bottom: 15px;
+        }
+
+        .content h1 span{
+            color: #ff960b;
+        }
+
+        .content p{
+            line-height: 22px;
+            font-size: 14px;
+            color: greenyellow;
+        }
+
+        .content .btn{
+            display: inline-block;
+            margin-top: 30px;
+            background: #ff960b;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+        }
+
+        .coin-list{
+            position: absolute;
+            right: 10%;
+            bottom: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .coin{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin: 0 15px;
+            color: #ff960b;
+            border: 1px solid #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+        }
+
+        .coin img{
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .coin h3{
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+ .crypto {
+    max-width: 400px;
+    margin: auto;
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 300px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+#coinPrice{
+        margin-bottom: 20px;
+        color: gold;
+    }
+
+    #coinPrice2{
+        margin-bottom: 20px;
+        color: gold;
+    }
+
+
+@media only screen and (max-width: 600px){
+    .container{
+        background-image: url(pexels-worldspectrum-844124\ \(2\).jpg);
+
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .bx{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: green;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .coin-list{
+       justify-content: center;
+       gap: 10px;
+       margin-top: 10px;
+
+    }
+
+    .coin{
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin: 0 15px;
+        color: #ff960b;
+        border: 1px solid #fff;
+        padding: 10px 10px;
+        border-radius: 8px;
+
+    }
+
+    .coin img{
+        width: 20px;
+    }
+
+   
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .bx{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col1, .about-col2{
+        flex-basis: 100%;
+
+    }
+
+    .about-col1{
+        margin-bottom: 30px;
+    }
+
+    .about-col2{
+        font-size: 14px;
+    }
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+
+    #coinPrice{
+        margin-bottom: 20px;
+        color: gold;
+    }
+
+    #coinPrice2{
+        margin-bottom: 20px;
+        color: gold;
+    }
+}
+
+    #msg{
+       color: green;
+       margin-top: -40px;
+       display: block;
+}
+
+.bank{
+    color: yellow;
+}
+
+
+
+
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <a href="#" class="btn">EN</a>
+        </nav>
+
+        <div class="content">
+            <h1>BUY & <br>SELL <span>Crypto</span></h1>
+        </div>
+
+        
+        <div class="coin-list">
+            <div class="coin">
+                <img src="bitcoin.png">
+                <div>
+                    <h3>$<span id="bitcoin"></span></h3>
+                    <p>Bitcoin</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="ethereum.png">
+                <div>
+                    <h3>$<span id="ethereum"></span></h3>
+                    <p>Ethereum</p>
+                </div>
+            </div>
+            <div class="coin">
+                <img src="dogecoin.png">
+                <div>
+                    <h3>$<span id="dogecoin"></span></h3>
+                    <p>Dogecoin</p>
+                </div>
+            </div>
+        </div>
+<section>
+
+    <div class="crypto">
+        <h1>Buy Cryptocurrency</h1>
+
+             <form id="cryptData" name="submit-to-google-sheet">
+                <select name="coins" id="coins" class="select"></select>
+          
+                <input id="amount" name="text" placeholder="Enter number of tokens" type="number" />
+                <div id="coinPrice"><span>Price per coin in Naira(N): </span><span id="price"></span> </div>
+                
+                <div id="coinPrice2"><span>
+                  Total price for coin in Naira(N): 
+                </span>
+                <span id="totalPrice"></span> 
+              </div>
+            </form>
+
+
+            <form name="sheet" id="cryptoData">
+              <input type="text" name="Address" placeholder="Kindly paste your wallet address." required>
+              <input type="text" name="Tokens"placeholder="Kindly input the number of tokens." required>
+              <input type="text" name="Total" placeholder="Kindly input the total price displayed." required>
+              <center class="bank">BANK TRANSFER: PALMPAY<br><br>
+            ACCOUNT NUMBER: 8139030259<br><br>
+            Name: Ubah valentine chinweotito<br><br></center>
+
+              <button type="submit">Buy</button>
+            </form>
+            <span id="msg"></span>
+            </body>  
+
+            
+        </form>
+
+        <div id="message"></div>
+    </div>
+</section>
+
+<script>
+    const url = "https://script.google.com/macros/s/AKfycbzOl38o8u9igDg3I2yUHRZuSMchjzGVOId4Rgw-9GLbex-QW3-5vY-olLlf7u0dAOJhbA/exec"
+    document.getElementById("cryptoData").addEventListener("submit", async function(e){
+
+        e.preventDefault();
+        const submitButton = e.target.querySelector("button");
+        submitButton.disabled = true;
+
+           const formData = new FormData(this);
+           const data = [];
+           formData.forEach((value) => data.push(value));
+
+
+           try{
+            const response = await fetch(url, {
+                method: "POST",
+                mode: "no-cors",
+                headers: {"Content-Type": "application/json"}, 
+                body: JSON.stringify(data),
+            });
+            console.log("the response is ", response)
+            alert("Request successful! Your tokens would be credited shortly!");
+           } catch(error){
+            console.error("Error:", error);
+            alert("Error occured while submitting data.")
+           }
+    })
+</script>
+
+<script>
+// this will help you fetch the data you need from coin cap . 
+// The event listener DOMContentLoaded will fetch this data before your page loads
+async function getCryptoData() {
+    try {
+      const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=ngn');
+      const data = await response.json();
+      console.log(data);  // Array of coins with name, price, etc.
+      displayCryptoData(data)
+    } catch (error) {
+      console.error("Error fetching CoinGecko data:", error);
+    }
+  }
+
+window.addEventListener("DOMContentLoaded",()=>{
+    getCryptoData()
+})
+
+
+// this will display the data for you in a select box
+function displayCryptoData(data){
+    // this will get the select input on your html
+    const select = document.getElementById("coins");
+
+    // you loop through the data you got when you fetched the crypto data
+    data.forEach(coin => {
+    
+      const option = document.createElement("option");
+      option.value = coin.id; // Set coin ID as the value
+      option.textContent = `${coin.name} (${coin.symbol.toUpperCase()})`;
+      option.dataset.price = coin.current_price;  // Store additional data as needed
+
+      
+  
+      select.appendChild(option);
+    });
+  }
+
+  document.getElementById("coins").addEventListener("change" ,function(){
+    const selectedOption = this.options[this.selectedIndex];
+    
+    displayCoinInfo(selectedOption.dataset.price,);
+    
+  })
+
+  function displayCoinInfo(price) {
+    const infoContainer = document.getElementById("price");
+    
+    infoContainer.textContent = `${price}`;
+}
+
+document.getElementById("amount").addEventListener("input" , function(e){
+      const infoContainer = document.getElementById("price");
+      console.log(typeof parseFloat(infoContainer.textContent));
+      const totalPriceContainer = document.getElementById('totalPrice')
+   totalPriceContainer.textContent =  e.target.value * infoContainer.textContent
+  })
+  
+</script>
+
+<script>
+var btc = document.getElementById("bitcoin");
+var eth = document.getElementById("ethereum");
+var doge = document.getElementById("dogecoin");
+
+var settings = {
+    "async": true,
+    "scrossDomain": true,
+    "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin&vs_currencies=usd",
+    "method": "GET",
+    "headers": {}
+}
+$.ajax(settings).done(function (response){
+    btc.innerHTML = response.bitcoin.usd;
+    eth.innerHTML = response.ethereum.usd;
+    doge.innerHTML = response.dogecoin.usd;
+});
+</script>
+
+
+    </div>
+  
+</body>
+</html>

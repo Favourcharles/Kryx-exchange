@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    body{
+        background: #0012;
+        color: black;
+    }
+
+
+    #header{
+        background: black;
+        color: #fff;
+        margin-bottom: 70px;
+        border-radius: 50px;
+    }
+
+    .header{
+        padding: 50px 0 0 5px;
+        justify-content: center;
+        font-weight: 500%;
+        font-size: 50px;
+        color: black;
+    }
+
+    .paragraph{
+        font-weight: 500%;
+        font-size: 20px;
+    }
+
+    .btn{
+        padding: 20px;
+        height: 100vh;
+        background: black;
+        border-radius: 50px;
+    }
+
+    .btn a{
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+    }
+
+
+    .btn a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    }
+    
+    .btn a:hover::after{
+        width: 100%;
+    }
+
+    .kryx{
+        padding: 5px;
+        font-family: sans-serif; 
+        font-weight: 500%;
+        font-size: 50px;
+        border: 3px solid black;
+        border-radius: 50px;
+        width: 10%;
+    }
+
+    #header .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #header .nav li{
+        display: inline-block;
+        list-style: none;
+        margin: 20px;
+    }
+
+    #header .nav li a{
+        display: flex;
+        list-style: none;
+        margin: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .container{
+        padding: 10px 10%;
+    }
+
+    #about{
+        margin-top: 200px;
+        padding: 20px;
+        background: black;
+        color: white;
+        border-radius: 50px;
+    }
+
+</style>
+<body>
+
+    <section id="header">
+        <div class="container">
+        <img src="" alt="">
+        <ul class="nav">
+            <h1 class="kryx">KRYX</h1>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#home">Home</a></li>
+        </ul>
+    </div>
+    </section>
+
+    <h1 class="header"><center>Finance is Simple!</center></h1>
+    <h2 class="paragraph"><center>Gain seamless control over your personal finances and crypto portfolio!</center></p><br><br><br><br>
+    <center><btn class="btn"><a href="project.html">Continue</a></btn></center>    
+    
+
+    <section id="about">
+        <div class="container">
+             <img src="">
+             <h3>Welcome to KRYX, a trusted platform designed for seamless, 
+                secure and user-friendly cryptocurrency trading. We are dedicated
+                to empowering Traders and Investors by providing a robust exchange
+                where you can buy, sell and trade a variety of digital assets.
+             </h3>
+
+             <div class="others">
+                <h2>
+                    1. Our Mission
+                            At KRYX, we aim to bridge the gap between traditional finance
+                            and the rapidly growing world of digital assets.
+                             
+                            Our mission is to provide a secure, transparent and efficient trading environment
+                            that enables you maximise the potential of cryptocurrency.
+                </h2>
+             </div>
+        </div>
+
+    </section>
+
+</body>
+</html>
